@@ -1,106 +1,192 @@
-// demo.tsx
-import { BentoPricing } from "@/components/ui/bento-pricing";
-import { cn } from '@/lib/utils';
+import { Check, Minus, MoveRight, PhoneCall } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
-export default function Pricing() {
-	// Example: Add more pricing plans
-	const customPlans = [
-		{
-			titleBadge: 'CREATORS SPECIAL',
-			priceLabel: '$19',
-			features: [
-				'Perfect for individual bloggers',
-				'freelancers and entrepreneurs',
-				'AI-Powered editing tools',
-				'Basic Analytics to track content performance',
-			],
-			variant: 'featured' as const,
-			badgeText: 'Most Recommended',
-			className: 'lg:col-span-5',
-		},
-		{
-			titleBadge: 'STARTERS',
-			priceLabel: '$0',
-			features: [
-				'Perfect for beginners',
-				'Unlimited Content Generation',
-				'AI-Powered editing tools',
-			],
-			className: 'lg:col-span-3',
-		},
-		{
-			titleBadge: 'TEAMS',
-			priceLabel: '$49',
-			features: [
-				'Ideal for small teams and agencies',
-				'Collaborative features like shared projects',
-				'Advanced Analytics to optimize content strategy',
-			],
-			className: 'lg:col-span-4',
-		},
-		{
-			titleBadge: 'ENTERPRISE',
-			priceLabel: '$99',
-			features: [
-				'Designed for large companies',
-				'high-volume content creators',
-				'dedicated account management',
-			],
-			className: 'lg:col-span-4',
-		},
-		// Add more plans as needed:
-		// {
-		// 	titleBadge: 'PREMIUM',
-		// 	priceLabel: '$199',
-		// 	features: [
-		// 		'White-label solutions',
-		// 		'Custom integrations',
-		// 		'Priority support',
-		// 	],
-		// 	className: 'lg:col-span-4',
-		// },
-	];
+function Pricing() {
+    return (
+        <div className="w-full py-20 lg:py-40 bg-black text-neutral-100">
+            <div className="container mx-auto">
+                <div className="flex text-center justify-center items-center gap-4 flex-col">
+                    <Badge className="bg-neutral-800 text-neutral-200">Pricing</Badge>
 
-	return (
-		<div id="pricing" className="bg-zinc-950 relative flex size-full min-h-screen items-center justify-center">
-			{/* Radial gradient at top */}
-			<div className="absolute inset-0 bg-[radial-gradient(35%_80%_at_50%_0%,rgba(255,255,255,0.08),transparent)]" />
-			
-			{/* Dots pattern */}
-			<div
-				aria-hidden="true"
-				className={cn(
-					'absolute inset-0 -z-10 size-full',
-					'bg-[radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)]',
-					'bg-[size:12px_12px]',
-				)}
-			/>
+                    <div className="flex gap-2 flex-col">
+                        <h2 className="text-3xl md:text-5xl tracking-tighter max-w-xl text-center font-regular">
+                            Prices that make sense!
+                        </h2>
+                        <p className="text-lg leading-relaxed tracking-tight text-neutral-400 max-w-xl text-center">
+                            Crafting standout visuals today takes more than just gear.</p>
+                    </div>
 
-			{/* Gradient orbs */}
-			<div
-				aria-hidden
-				className="absolute inset-0 isolate -z-10 opacity-80 contain-strict"
-			>
-				<div className="bg-[radial-gradient(68.54%_68.72%_at_55.02%_31.46%,rgba(255,255,255,.04)_0,rgba(255,255,255,.01)_50%,rgba(255,255,255,.005)_80%)] absolute top-0 left-0 h-320 w-140 -translate-y-87.5 -rotate-45 rounded-full" />
-				<div className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,.03)_0,rgba(255,255,255,.008)_80%,transparent_100%)] absolute top-0 left-0 h-320 w-60 [translate:5%_-50%] -rotate-45 rounded-full" />
-				<div className="bg-[radial-gradient(50%_50%_at_50%_50%,rgba(255,255,255,.03)_0,rgba(255,255,255,.008)_80%,transparent_100%)] absolute top-0 left-0 h-320 w-60 -translate-y-87.5 -rotate-45 rounded-full" />
-			</div>
+                    <div className="grid text-left w-full grid-cols-3 lg:grid-cols-4 divide-x divide-neutral-800 pt-20">
+                        <div className="col-span-3 lg:col-span-1"></div>
 
-			<section className="mx-auto w-full max-w-5xl p-4">
-				{/* Heading */}
-				<div className="mx-auto mb-10 max-w-2xl text-center">
-					<h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-white">
-					Transparent, Fair Pricing.
-					</h1>
-					<p className="text-zinc-400 mt-4 text-sm md:text-base">
-					Every tier is designed to deliver exceptional value. Compare features and find the best way to supercharge your efforts.
-					</p>
-				</div>
-				
-				{/* Use with custom plans or without (will use defaults) */}
-				<BentoPricing plans={customPlans} />
-				{/* Or simply: <BentoPricing /> */}
-			</section>
-		</div>
-	);
+                        {/* Startup */}
+                        <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
+                            <p className="text-2xl">Basic</p>
+                            <p className="text-sm text-neutral-400">
+                                Our goal is to streamline the entire video creation process, delivering speed, efficiency, and quality for every client.
+                            </p>
+                            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
+                                <span className="text-4xl">Rs. 2500</span>
+                                <span className="text-sm text-neutral-400"> / hour</span>
+                            </p>
+                            <Button variant="outline" className="gap-4 mt-8 border-neutral-700 text-black">
+                                Try it <MoveRight className="w-4 h-4" />
+                            </Button>
+                        </div>
+
+                        {/* Growth */}
+                        <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
+                            <p className="text-2xl">Standard</p>
+                            <p className="text-sm text-neutral-400">
+                                Our goal is to streamline the entire video creation process, delivering speed, efficiency, and quality for every client.
+
+                            </p>
+                            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
+                                <span className="text-4xl">Rs. 5000</span>
+                                <span className="text-sm text-neutral-400"> / hour</span>
+                            </p>
+                            <Button className="gap-4 mt-8 bg-neutral-800 hover:bg-neutral-700 text-neutral-200">
+                                Try it <MoveRight className="w-4 h-4" />
+                            </Button>
+                        </div>
+
+                        {/* Enterprise */}
+                        <div className="px-3 py-1 md:px-6 md:py-4 gap-2 flex flex-col">
+                            <p className="text-2xl">Premium</p>
+                            <p className="text-sm text-neutral-400">
+                                Our goal is to streamline the entire video creation process, delivering speed, efficiency, and quality for every client.
+
+                            </p>
+                            <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
+                                <span className="text-4xl">Rs. 7000</span>
+                                <span className="text-sm text-neutral-400"> / month</span>
+                            </p>
+                            <Button variant="outline" className="gap-4 mt-8 border-neutral-700 text-black">
+                                Contact us <PhoneCall className="w-4 h-4" />
+                            </Button>
+                        </div>
+
+                        {/* Feature List */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">
+                            <b>Features</b>
+                        </div>
+                        <div></div><div></div><div></div>
+
+                        {/* Space*/}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Space</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                         {/* Furniture*/}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Furniture</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                        {/* Lighting */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Lighting</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                        {/* AI Assistant */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Equipment</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                        {/* Version Control */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Technician</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                        {/* Multiplayer */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Post Production</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                          {/* Multiplayer */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Editing</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                          {/* Multiplayer */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Teaser and Highlights</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+                          {/* Multiplayer */}
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Short Clips</div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Minus className="w-4 h-4 text-neutral-600" />
+                        </div>
+                        <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
+                            <Check className="w-4 h-4" />
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }
+
+export default Pricing;

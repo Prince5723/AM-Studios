@@ -39,7 +39,7 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
   // Function to open WhatsApp
   const openWhatsApp = () => {
     const phoneNumber = whatsappNumber.replace(/[^0-9]/g, ''); // Remove non-numeric characters
-    window.open(`https://wa.me/${phoneNumber}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/${phoneNumber}?text=Hi,%20I%20want%20to%20book%20your%20studio%20for%20a%20session.`, '_blank', 'noopener,noreferrer');
   };
 
   // Animation variants for the text content

@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/testimonials";
 import Faq from "@/components/faq";
 import FooterNewsletter from "@/components/footer";
 import { Process } from "@/components/card-stack";
-import Pricing  from "@/components/pricing";
+import Pricing from "@/components/pricing";
 import Contact from "@/components/contact";
 
 
