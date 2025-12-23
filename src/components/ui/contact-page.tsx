@@ -8,8 +8,6 @@ import {
 	Mail,
 	MapPin,
 	Phone,
-	GithubIcon,
-	TwitterIcon,
 	LinkedinIcon,
 	InstagramIcon,
 } from 'lucide-react';
@@ -17,19 +15,19 @@ import { Button, ButtonProps } from '@/components/ui/button';
 
 const APP_EMAIL = 'studio@atishmathur.com';
 const APP_PHONE = '+91 9990975812';
-const APP_PHONE_2 = '+91 3219876543';
+const APP_PHONE_2 = '+91 9990595812';
 
 export function ContactPage() {
 	const socialLinks = [
 		{
-			icon: GithubIcon,
-			href: 'https://github.com/sshahaider',
-			label: 'GitHub',
+			icon: Phone,
+			href: `https://wa.me/${APP_PHONE.replace(/\D/g, '')}`,
+			label: 'WhatsApp',
 		},
 		{
-			icon: TwitterIcon,
-			href: 'https://twitter.com/sshahaider',
-			label: 'Twitter',
+			icon: Mail,
+			href: `mailto:${APP_EMAIL}`,
+			label: 'Email',
 		},
 		{
 			icon: LinkedinIcon,
@@ -38,7 +36,7 @@ export function ContactPage() {
 		},
 		{
 			icon: InstagramIcon,
-			href: 'https://instagram.com/sshahaider',
+			href: 'https://www.instagram.com/amstudiodwarka/',
 			label: 'Instagram',
 		},
 	];
@@ -83,7 +81,7 @@ export function ContactPage() {
 						description="Drop by our office for a chat."
 					>
 						<span className="font-mono text-base font-medium tracking-wide text-white">
-							Office # 401 & 402, 4th Floor, The Cloverleaf, Sector 11, Dwarka, Delhi 110078
+							Office: 5th Floor, The Cloverleaf, Sector 11, Dwarka, Delhi 110078
 							
 						</span>
 					</Box>

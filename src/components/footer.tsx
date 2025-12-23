@@ -1,6 +1,6 @@
 'use client';
 
-import { Instagram, Linkedin, Twitter, Youtube } from 'lucide-react';
+import { Instagram, Linkedin, Mail, Phone } from 'lucide-react';
 
 const footerColumns = [
 	{
@@ -43,10 +43,10 @@ const legalLinks = [
 ] as const;
 
 const socialIcons = [
-	{ icon: <Instagram className="h-5 w-5" />, href: '#' },
-	{ icon: <Twitter className="h-5 w-5" />, href: '#' },
-	{ icon: <Linkedin className="h-5 w-5" />, href: '#' },
-	{ icon: <Youtube className="h-5 w-5" />, href: '#' },
+	{ icon: <Phone className="h-5 w-5" />, href: 'https://wa.me/919990975812' },
+	{ icon: <Instagram className="h-5 w-5" />, href: 'https://www.instagram.com/amstudiodwarka/' },
+	{ icon: <Linkedin className="h-5 w-5" />, href: 'https://linkedin.com/in/sshahaider' },
+	{ icon: <Mail className="h-5 w-5" />, href: 'mailto:studio@atishmathur.com' },
 ];
 
 export default function FooterNewsletter() {

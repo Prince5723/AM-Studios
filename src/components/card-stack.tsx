@@ -41,7 +41,7 @@ const PROCESS_PHASES = [
     id: "process-7",
     title: "Prime Location & Accessibility",
     description:
-    "We chose our location to be highly accessible for you and your high-profile guests. Our convenient, central setting in Dwarka (401 & 402, 4th Floor, The Cloverleaf, Sector 11, Delhi 110078) minimizes travel stress, making it easier to book interviews and maintain a consistent recording schedule."
+    "We chose our location to be highly accessible for you and your high-profile guests. Our convenient, central setting in Dwarka (501, 5th Floor, The Cloverleaf, Sector 11, Delhi 110078) minimizes travel stress, making it easier to book interviews and maintain a consistent recording schedule."
   },
   // {
   //   id: "process-5",

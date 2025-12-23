@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 function Pricing() {
     return (
-        <div className="w-full py-20 lg:py-40 bg-black text-neutral-100">
+        <div id="pricing" className="w-full py-20 lg:py-40 bg-black text-neutral-100">
             <div className="container mx-auto">
                 <div className="flex text-center justify-center items-center gap-4 flex-col">
                     <Badge className="bg-neutral-800 text-neutral-200">Pricing</Badge>
@@ -60,7 +60,7 @@ function Pricing() {
                             </p>
                             <p className="flex flex-col lg:flex-row lg:items-center gap-2 text-xl mt-8">
                                 <span className="text-4xl">Rs. 7000</span>
-                                <span className="text-sm text-neutral-400"> / month</span>
+                                <span className="text-sm text-neutral-400"> / hour</span>
                             </p>
                             <Button variant="outline" className="gap-4 mt-8 border-neutral-700 text-black">
                                 Contact us <PhoneCall className="w-4 h-4" />
@@ -170,7 +170,7 @@ function Pricing() {
                         </div>
 
                           {/* Multiplayer */}
-                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Short Clips</div>
+                        <div className="px-3 lg:px-6 col-span-3 lg:col-span-1 py-4">Raw Clips</div>
                         <div className="px-3 py-1 md:px-6 md:py-4 flex justify-center">
                             <Minus className="w-4 h-4 text-neutral-600" />
                         </div>

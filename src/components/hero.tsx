@@ -17,7 +17,7 @@ const DEMO_IMAGES = [
 const AnimatedHeroDemo = () => {
   return (
     <AnimatedMarqueeHero
-      tagline="Join over 1000 happy creators"
+      tagline="Join over 500 happy creators"
       title={
         <>
         The Premier Studio

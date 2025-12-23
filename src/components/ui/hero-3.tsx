@@ -42,6 +42,16 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
     window.open(`https://wa.me/${phoneNumber}?text=Hi,%20I%20want%20to%20book%20your%20studio%20for%20a%20session.`, '_blank', 'noopener,noreferrer');
   };
 
+  // Function to scroll to pricing section
+  const openPricing = () => {
+    const el = document.getElementById('pricing');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      window.location.hash = '#pricing';
+    }
+  };
+
   // Animation variants for the text content
   const FADE_IN_ANIMATION_VARIANTS = {
     hidden: { opacity: 0, y: 10 },
@@ -104,13 +114,24 @@ export const AnimatedMarqueeHero: React.FC<AnimatedMarqueeHeroProps> = ({
           {description}
         </motion.p>
 
-        {/* Call to Action Button */}
+        {/* Call to Action Buttons */}
         <motion.div
           initial="hidden"
           animate="show"
           transition={{ delay: 0.6 }}
         >
-          <ActionButton onClick={openWhatsApp}>{ctaText}</ActionButton>
+          <div className="flex items-center gap-4 justify-center">
+            <ActionButton onClick={openWhatsApp}>{ctaText}</ActionButton>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={openPricing}
+              className="mt-8 px-6 py-3 rounded-full bg-transparent text-white font-semibold shadow-sm border border-white/10 hover:bg-white/5 focus:outline-none focus:ring-2 focus:ring-white/10"
+            >
+              Explore pricing
+            </motion.button>
+          </div>
         </motion.div>
       </div>
 

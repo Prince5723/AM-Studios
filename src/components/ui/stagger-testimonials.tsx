@@ -8,99 +8,99 @@ const SQRT_5000 = Math.sqrt(5000);
 const testimonials = [
   {
     tempId: 0,
-    testimonial: "The sound quality is shockingly good. It instantly elevated our small show to a top-tier production.",
-    by: "Aisha, Host of The Creator Economy",
-    imgSrc: "https://i.pravatar.cc/150?img=1"
+    testimonial: "The studio's sound made our small Delhi chat show sound like a national broadcast. Everything was crystal clear.",
+    by: "Aditi, Host of The Delhi Dialogues",
+    imgSrc: "https://i.pravatar.cc/150?img=21"
   },
   {
     tempId: 1,
-    testimonial: "The 24/7 booking is a game-changer for our international guests. It means we never miss a crucial interview.",
-    by: "Mark, Producer at Global Insights News",
-    imgSrc: "https://i.pravatar.cc/150?img=2"
+    testimonial: "Their 24/7 booking saved our international interviews. We recorded at odd hours and never missed a guest.",
+    by: "Rajesh, Producer at Mumbai Morning Show",
+    imgSrc: "https://i.pravatar.cc/150?img=22"
   },
   {
     tempId: 2,
-    testimonial: "I thought I needed a huge budget for a video podcast, but AM Studio made it seamless and affordable.",
-    by: "Chloe, CEO of TrendSpark Media",
-    imgSrc: "https://i.pravatar.cc/150?img=3"
+    testimonial: "I thought video podcasting would need a big budget. AM Studio helped us launch professionally on a startup budget.",
+    by: "Sanjay, Founder at Startup Katta",
+    imgSrc: "https://i.pravatar.cc/150?img=23"
   },
   {
     tempId: 3,
-    testimonial: "The in-studio technician was worth the entire session cost. Zero stress, perfect levels, every time.",
-    by: "David, Host of The Daily Tech Breakdown",
-    imgSrc: "https://i.pravatar.cc/150?img=4"
+    testimonial: "The in-studio technician sorted levels and room tone instantly. We saved so much time in post.",
+    by: "Rohit, Host of Bengaluru Bytes",
+    imgSrc: "https://i.pravatar.cc/150?img=24"
   },
   {
     tempId: 4,
-    testimonial: "We tried cheaper studio rentals, but the final product always suffered. AM Studio is where serious brands go.",
-    by: "Andre, Head of Design at CreativeSolutions",
-    imgSrc: "https://i.pravatar.cc/150?img=5"
+    testimonial: "We tried cheaper places in Delhi, but the final audio never matched. AM Studio is where serious creators go.",
+    by: "Meera, Head of Content at BrandKart",
+    imgSrc: "https://i.pravatar.cc/150?img=25"
   },
   {
     tempId: 5,
-    testimonial: "Their video editing team is fast. We get our episodes back ready-to-publish, which fits our weekly schedule.",
-    by: "Jeremy, Product Manager at TimeWise",
-    imgSrc: "https://i.pravatar.cc/150?img=6"
+    testimonial: "Their editors return episodes ready-to-publish within days. It keeps our weekly schedule intact.",
+    by: "Ishaan, Producer at Weekend Stories",
+    imgSrc: "https://i.pravatar.cc/150?img=26"
   },
   {
     tempId: 6,
-    testimonial: "From the acoustics to the coffee, the entire experience is premium. It's the perfect environment.",
-    by: "Pam, Marketing Director at BrandBuilders",
-    imgSrc: "https://i.pravatar.cc/150?img=7"
+    testimonial: "From the acoustics to the chai, the whole experience felt premium. Perfect place to focus and record.",
+    by: "Priya, Marketing Lead at LocalWorks",
+    imgSrc: "https://i.pravatar.cc/150?img=27"
   },
   {
     tempId: 7,
-    testimonial: "The gear they have access to is better than anything we could buy ourselves. True professional-grade.",
-    by: "Daniel, Data Scientist at AnalyticsPro",
-    imgSrc: "https://i.pravatar.cc/150?img=8"
+    testimonial: "The gear they provide is pro-grade — better than anything we could assemble ourselves.",
+    by: "Amit, Sound Engineer at EchoLabs",
+    imgSrc: "https://i.pravatar.cc/150?img=28"
   },
   {
     tempId: 8,
-    testimonial: "It's just the best. Period.",
-    by: "Fernando, UX Designer at UserFirst",
-    imgSrc: "https://i.pravatar.cc/150?img=9"
+    testimonial: "It's simply the best studio experience we've had in Delhi. Consistent, clean, and reliable.",
+    by: "Nisha, UX Designer at UserFirst India",
+    imgSrc: "https://i.pravatar.cc/150?img=29"
   },
   {
     tempId: 9,
-    testimonial: "I literally booked a session at 3 AM to accommodate a celebrity guest. Best decision ever.",
-    by: "Andy, Marketing Head at CloudMasters",
-    imgSrc: "https://i.pravatar.cc/150?img=10"
+    testimonial: "I booked a sunrise slot to accommodate a celebrity guest — seamless experience and perfect output.",
+    by: "Karan, Marketing Head at CloudMitra",
+    imgSrc: "https://i.pravatar.cc/150?img=30"
   },
   {
     tempId: 10,
-    testimonial: "The difference in our listener retention since moving to AM Studio is undeniable. Quality converts.",
-    by: "Pete, Sales Director at RevenueRockets",
-    imgSrc: "https://i.pravatar.cc/150?img=11"
+    testimonial: "Our listener numbers improved noticeably after switching to AM Studio — quality truly converts.",
+    by: "Pooja, Sales Director at RevenueWave",
+    imgSrc: "https://i.pravatar.cc/150?img=31"
   },
   {
     tempId: 11,
-    testimonial: "The sound engineer caught an audio issue I never would have noticed. Their attention to detail is fantastic.",
-    by: "Marina, HR Manager at TalentForge",
-    imgSrc: "https://i.pravatar.cc/150?img=12"
+    testimonial: "The engineer caught a subtle phase issue I would have missed. That attention to detail is invaluable.",
+    by: "Anjali, HR Manager at TalentForge India",
+    imgSrc: "https://i.pravatar.cc/150?img=32"
   },
   {
     tempId: 12,
-    testimonial:"We love that we can rent just the space for our internal video announcements—it looks crisp and professional.",
-    by: "Olivia, Customer Success Manager at ClientCare",
-    imgSrc: "https://i.pravatar.cc/150?img=13"
+    testimonial: "We sometimes just rent the space for crisp internal video shoots — everything looks professional on camera.",
+    by: "Saurabh, Customer Success Manager at ClientCare India",
+    imgSrc: "https://i.pravatar.cc/150?img=33"
   },
   {
     tempId: 13,
-    testimonial: "My co-host is remote, and the technician perfectly blended the remote audio feed with my studio mic.",
-    by: "Raj, Operations Manager at StreamlineSolutions",
-    imgSrc: "https://i.pravatar.cc/150?img=14"
+    testimonial: "My co-host records remotely and the technician blended the feeds perfectly. Felt like we were in the same room.",
+    by: "Ravi, Operations Manager at Streamline Solutions",
+    imgSrc: "https://i.pravatar.cc/150?img=34"
   },
   {
     tempId: 15,
-    testimonial: "AM Studio treats my independent podcast like a major broadcast show. That level of quality is unmatched.",
-    by: "Trevor, Scaling Officer at GrowthGurus",
-    imgSrc: "https://i.pravatar.cc/150?img=16"
+    testimonial: "AM Studio made my indie podcast sound like a studio production. The polish and support are unmatched.",
+    by: "Vikram, Independent Podcaster",
+    imgSrc: "https://i.pravatar.cc/150?img=35"
   },
   {
     tempId: 16,
-    testimonial: "Their flexible packages let us scale up during launch season and dial back during our breaks. Perfect fit.",
-    by: "Naomi, Innovation Lead at FutureTech",
-    imgSrc: "https://i.pravatar.cc/150?img=17"
+    testimonial: "Their flexible packages let us scale up during launches and scale down later — perfect for our seasonal needs.",
+    by: "Neha, Innovation Lead at FutureTech India",
+    imgSrc: "https://i.pravatar.cc/150?img=36"
   }
 ];
 
@@ -164,7 +164,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ position, testimonial
   );
 };
 
-export default function StaggerTestimonials(): React.ReactElement {
+export default function   StaggerTestimonials(): React.ReactElement {
   const [cardSize, setCardSize] = useState(365);
   const [testimonialsList, setTestimonialsList] = useState(testimonials);
 
